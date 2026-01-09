@@ -465,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 829499893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -1.72, z: 0}
+  m_LocalPosition: {x: -0.08, y: -3.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -504,6 +504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy_movement
   player: {fileID: 829499893}
   speed: 1
+  distanceBetween: 5
 --- !u!114 &1357277388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,6 +519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   player: {fileID: 0}
   speed: 0
+  distanceBetween: 0
 --- !u!212 &1357277389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -585,7 +587,7 @@ Transform:
   m_GameObject: {fileID: 1357277386}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 1.94, z: 0}
+  m_LocalPosition: {x: -0.18, y: 3.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
