@@ -38,7 +38,7 @@ public class Player_movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            if (transform.position.y < 4.675)
+            if (transform.position.y < 4.3)
             {
                 rb.linearVelocity = new Vector2(0, 3);
             }
