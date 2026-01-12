@@ -8,11 +8,9 @@ public class bullet : MonoBehaviour
         Destroy(gameObject);   
        
         
-
-        
         if (Collision.gameObject.TryGetComponent<enemyHP>(out enemyHP enemyComponent)) 
         {
-            enemyComponent.Takedamage(1);
+            enemyComponent.TakeDamage(1);
         }
 
         Destroy(gameObject);
