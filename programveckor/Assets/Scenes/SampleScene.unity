@@ -476,12 +476,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3880742140374323244, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
       propertyPath: m_Name
-      value: Circle (1)
+      value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9048789331324827006, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095661687531465506, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8767328523480325316, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3880742140374323244, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6524002627067029825}
   m_SourcePrefab: {fileID: 100100000, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
 --- !u!1001 &1123562773888805027
 PrefabInstance:
@@ -497,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 6524002627067029818}
     - target: {fileID: 3253363038663164844, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6900267675462962636, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Enabled
@@ -559,6 +571,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3880742140374323244, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
   m_PrefabInstance: {fileID: 237184389175486422}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6524002627067029825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6524002627067029818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767ea231d28a45e46a41918ea9b5d3c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_movement
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
