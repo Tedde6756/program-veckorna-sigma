@@ -28,10 +28,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-        if (canFire)
+        if (!canFire)
         {
             timer += Time.deltaTime;
-            if (timer > timeBetweenFireing)
+            if(timer > timeBetweenFireing)
             {
                 canFire = true;
                 timer = 0;
