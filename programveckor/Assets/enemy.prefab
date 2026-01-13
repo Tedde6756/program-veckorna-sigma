@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2092678457225384041}
   - component: {fileID: -6331430914381802389}
   - component: {fileID: -451447825786823632}
+  - component: {fileID: -8900375137594962490}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -186,7 +187,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -229,3 +230,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8900375137594962490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253363038663164844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a800395cf9ed5f1439fef911428e22a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemy_movement
+  player: {fileID: 3880742140374323244, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
+  speed: 1
+  distanceBetween: 5
