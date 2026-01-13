@@ -8,6 +8,20 @@ public class bullet : MonoBehaviour
     private Rigidbody2D rb;
     public float force;
 
+    [SerializeField]
+    int hurtAmount = 1;
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        EnemyHealth ehealth = collider.gameObject.GetComponent<EnemyHealth>();
+        if (ehealth == null)
+        {
+            return;
+        }
+
+        ehealth.Hurt(hurtAmount);
+        Destroy(gameObject);
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

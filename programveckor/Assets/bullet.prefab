@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   force: 5
+  hurtAmount: 1
 --- !u!61 &-5301364778289944145
 BoxCollider2D:
   m_ObjectHideFlags: 0

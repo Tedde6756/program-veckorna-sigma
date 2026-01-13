@@ -1,31 +1,35 @@
 using UnityEngine;
 
-public class damageplayer : MonoBehaviour
+public class HurtPlayer : MonoBehaviour
 {
-    public playerHealth pHealth;
-    public float damage;   
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField]
+    int hurtAmount = 1;
+
+    [SerializeField]
+    AudioClip hurtSound;
+
+    [SerializeField]
+    GameObject deathObject;
+
+    AudioSource audioSource;
+
+    private void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-
-
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
+        PlayerHealth phealth = collider.gameObject.GetComponent<PlayerHealth>();
+        if (phealth == null)
         {
-            other.gameObject.GetComponent<playerHealth>().health -= damage;
+            return;
         }
 
+        phealth.Hurt(hurtAmount);
+        Destroy(gameObject);
     }
-
-
 }
 
