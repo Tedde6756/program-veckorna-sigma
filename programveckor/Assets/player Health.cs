@@ -1,20 +1,50 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class playerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    public float health;
-    public float maxHealth;
-    public Image healthBar;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField]
+    int maxHealth = 3;
+    public Image healthbar;
+    int health;
+
+    [SerializeField]
+    AudioClip hurtSound;
+
+    AudioSource audioSource;
+
+    [SerializeField]
+    string gameOverSceneName;
+
+    // Start is called before the first frame update
     void Start()
     {
-        maxHealth = health;
+        health = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Hurt(int amount)
     {
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+
+        if (audioSource != null && hurtSound != null)
+        {
+            audioSource.PlayOneShot(hurtSound);
+        }
+
+        health -= amount;
+        if (health <= 0)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene(gameOverSceneName);
+    }
+
+    private void Update()
+    {
+        healthbar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
     }
 }

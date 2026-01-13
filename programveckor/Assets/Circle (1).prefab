@@ -152,7 +152,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 0
 --- !u!61 &1365937885249047474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -223,9 +223,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86a7e91e6ffc9d4a874edd1ca64dd0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerHealth
-  health: 10
   maxHealth: 10
-  healthBar: {fileID: 6034785448631460065, guid: 5459b51a636c8114c9f1a61df1c61b85, type: 3}
+  healthbar: {fileID: 0}
+  hurtSound: {fileID: 0}
+  gameOverSceneName: 
 --- !u!1 &5571764231389367899
 GameObject:
   m_ObjectHideFlags: 0

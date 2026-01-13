@@ -1,26 +1,48 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class enemyHP : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField]
+    int maxHealth = 1;
 
-    [SerializeField] float health, maxHealth = 3f;
+    int health;
+
+    [SerializeField]
+    AudioClip hurtSound;
+
+    [SerializeField]
+    GameObject deathObject;
+
+    AudioSource audioSource;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         health = maxHealth;
     }
 
-    public void TakeDamage(float damageAmmount)
+    public void Hurt(int amount)
     {
-        health -= damageAmmount;
-
-        if(health <= 0)
+        health -= amount;
+        if (audioSource != null && hurtSound != null)
         {
-            Destroy(gameObject);   
-    
-        
+            audioSource.PlayOneShot(hurtSound);
+        }
+
+        if (health <= 0)
+        {
+            Die();
         }
     }
 
+    void Die()
+    {
+        if (deathObject != null)
+        {
+            Instantiate(deathObject, transform.position, Quaternion.identity);
+        }
 
+        Destroy(gameObject);
+    }
 }
