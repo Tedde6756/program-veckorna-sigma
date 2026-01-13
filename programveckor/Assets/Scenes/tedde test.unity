@@ -510,6 +510,10 @@ PrefabInstance:
       propertyPath: pHealth
       value: 
       objectReference: {fileID: -7651996703472044096, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
+    - target: {fileID: -7953176031313006155, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
+      propertyPath: hurtAmount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3253363038663164844, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Name
       value: enemy
