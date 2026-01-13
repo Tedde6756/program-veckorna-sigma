@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a800395cf9ed5f1439fef911428e22a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  player: {fileID: 0}
+  player: {fileID: 3880742140374323244, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
   speed: 1
   distanceBetween: 5
 --- !u!114 &1647154182653537562
@@ -225,5 +225,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c1859d203874f4fb95eb75a966c18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::damageplayer
-  pHealth: {fileID: 0}
+  pHealth: {fileID: -7651996703472044096, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
   damage: 1
