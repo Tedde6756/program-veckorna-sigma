@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7651996703472044096, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
       propertyPath: health
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -7651996703472044096, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
       propertyPath: healthBar
@@ -622,8 +622,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -303.51553, y: 158.22385}
-  m_SizeDelta: {x: 179.7858, y: 53.0771}
+  m_AnchoredPosition: {x: -291.74213, y: 157.18787}
+  m_SizeDelta: {x: 156.8536, y: 43.8368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073225761
 MonoBehaviour:
