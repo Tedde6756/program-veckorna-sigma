@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3624714146767532312}
   - component: {fileID: 9048789331324827006}
   - component: {fileID: 1365937885249047474}
-  - component: {fileID: 9095661687531465506}
   - component: {fileID: -7651996703472044096}
+  - component: {fileID: 6483811914738581565}
   m_Layer: 0
   m_Name: Circle (1)
   m_TagString: Player
@@ -199,18 +199,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9095661687531465506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3880742140374323244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767ea231d28a45e46a41918ea9b5d3c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player_movement
 --- !u!114 &-7651996703472044096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,8 +213,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerHealth
   maxHealth: 10
   healthbar: {fileID: 0}
+  Health: 0
   hurtSound: {fileID: 0}
   gameOverSceneName: 
+--- !u!114 &6483811914738581565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880742140374323244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767ea231d28a45e46a41918ea9b5d3c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_movement
 --- !u!1 &5571764231389367899
 GameObject:
   m_ObjectHideFlags: 0
