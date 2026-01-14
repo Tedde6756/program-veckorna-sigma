@@ -715,7 +715,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.03, y: -0.06, z: 0}
-  m_LocalScale: {x: 9.56915, y: 4.7542987, z: 1}
+  m_LocalScale: {x: 0.9171843, y: 0.45569026, z: 0.095848046}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1615652170}
@@ -1332,7 +1332,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 700
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 9210280115383153276, guid: 74a1e6196e65a24458b2eec866e8cba9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1352,8 +1352,8 @@ Transform:
   m_GameObject: {fileID: 923328664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52, y: 0.96, z: 0}
-  m_LocalScale: {x: 0.59527165, y: 1.2883283, z: 1}
+  m_LocalPosition: {x: -0.52, y: -0.07, z: 0}
+  m_LocalScale: {x: 5.263121, y: 5.263121, z: 5.263121}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 337049716}
@@ -2533,7 +2533,7 @@ MonoBehaviour:
   - Oh thank god!
   - I thought I was the only survivor!
   - After the plague hit earth like a storm all of humanity was almost wiped out
-    by the mysterius sickness...
+    by the mysterious sickness...
   - Luckily all of humanity helped build spaceships that would fly through the observable
     galaxy to either find a cure or to live out their lives free from the plague
   - 'But all thanks to some lazy guards who were too lazy to check through all the
