@@ -46,6 +46,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        healthbar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+       
     }
 }
