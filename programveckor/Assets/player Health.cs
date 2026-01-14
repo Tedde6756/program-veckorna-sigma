@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     int maxHealth = 3;
     public Image healthbar;
     int health;
+    public float Health;
 
     [SerializeField]
     AudioClip hurtSound;
