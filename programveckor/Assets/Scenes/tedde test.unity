@@ -205,8 +205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372695572}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.56, y: -4.12, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -276,11 +276,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3699096095479298535, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.08596733
+      value: -10.11
       objectReference: {fileID: 0}
     - target: {fileID: 3699096095479298535, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8421788
+      value: -7.4
       objectReference: {fileID: 0}
     - target: {fileID: 3699096095479298535, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -319,7 +319,15 @@ PrefabInstance:
       value: Circle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 9048789331324827006, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048789331324827006, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
       propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048789331324827006, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
+      propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -515,13 +523,13 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 910025640}
-    - target: {fileID: -7953176031313006155, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
-      propertyPath: pHealth
-      value: 
-      objectReference: {fileID: -7651996703472044096, guid: c9183ac53e74c6347a988f63650d7a5a, type: 3}
-    - target: {fileID: -7953176031313006155, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
-      propertyPath: hurtAmount
-      value: 10
+    - target: {fileID: -451447825786823632, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -451447825786823632, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3253363038663164844, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Name
@@ -529,11 +537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7408957919838560304, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.109163076
+      value: -10.13
       objectReference: {fileID: 0}
     - target: {fileID: 7408957919838560304, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7476635
+      value: -1.52
       objectReference: {fileID: 0}
     - target: {fileID: 7408957919838560304, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -569,7 +577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1647154182653537562, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
-    - {fileID: 6900267675462962636, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
