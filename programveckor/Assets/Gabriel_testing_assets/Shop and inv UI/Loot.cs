@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class Loot : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public ItemSO itemSO;
+    public SpriteRenderer sr;
+    public Animator anim;
+    public int quantity;
 
-    // Update is called once per frame
-    void Update()
+    public void OnValidate()
     {
-        
+        if (itemSO == null)
+            return;
+        sr.sprite =itemSO.icon;
+        this.name = itemSO.itemName;
+
     }
 }
