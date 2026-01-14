@@ -2,34 +2,15 @@ using UnityEngine;
 
 public class HurtPlayer : MonoBehaviour
 {
-    [SerializeField]
-    int hurtAmount = 1;
+    public int damage;
+    public PlayerHealth playerHealth;
 
-    [SerializeField]
-    AudioClip hurtSound;
-
-    [SerializeField]
-    GameObject deathObject;
-
-    AudioSource audioSource;
-
-    private void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        audioSource = GetComponent<AudioSource>();
-    }
-
-
-
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        PlayerHealth phealth = collider.gameObject.GetComponent<PlayerHealth>();
-        if (phealth == null)
+        if (collision.gameObject.tag == "Player")
         {
-            return;
+            playerHealth.TakeDamage(damage);   
         }
-
-        phealth.Hurt(hurtAmount);
-        Destroy(gameObject);
     }
 }
 
