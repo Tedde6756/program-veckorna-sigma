@@ -5,6 +5,7 @@ public class Npcscript : MonoBehaviour
 {
     bool isPlayerNearby = false;
     public GameObject dialogText;
+    public GameObject PromptText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,18 +17,20 @@ public class Npcscript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isPlayerNearby == true)
         {
-            print("Prata med Npc");
+            
             dialogText.SetActive(true);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Något är i närheten");
+        PromptText.SetActive(true);
+        print("Prata med npc");
         isPlayerNearby = true;
     }
     void OnTriggerExit2D(Collider2D collision)
     {
         isPlayerNearby = false;
         dialogText.SetActive(false);
+        PromptText.SetActive(false);
     }
 }
