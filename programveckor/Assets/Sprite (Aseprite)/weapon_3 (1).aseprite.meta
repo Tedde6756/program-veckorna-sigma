@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ed601d9ad036d14381b779737705f42
+guid: a6b2b6274f213ad48bbb8191017b8f2b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: weapon_2 (1)
+  - name: weapon_3 (1)
     originalName: 
-    pivot: {x: 0.5, y: -0.18181819}
+    pivot: {x: 0.50000006, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 24
-      height: 11
-    spriteID: b0822247899b88c4e9221562175b37db
+      width: 34
+      height: 14
+    spriteID: 8016fa4c0dac15548985444cc846d983
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1932696499
+      value0: 3903356622
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: weapon_2 (1)
+    name: weapon_3 (1)
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: weapon_2 (1)
+    - name: weapon_3 (1)
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 12
-        y: 2
-        width: 24
-        height: 11
-      spriteId: b0822247899b88c4e9221562175b37db
+        x: 7
+        y: 1
+        width: 34
+        height: 14
+      spriteId: 8016fa4c0dac15548985444cc846d983
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -182,4 +182,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 48, y: 16}
-  previousTextureSize: {x: 32, y: 32}
+  previousTextureSize: {x: 64, y: 32}
