@@ -961,6 +961,14 @@ PrefabInstance:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3020813245393709970, guid: d6790e17630d31541831a3115397f7bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.218
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020813245393709970, guid: d6790e17630d31541831a3115397f7bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.312
+      objectReference: {fileID: 0}
     - target: {fileID: 3698430200778990721, guid: d6790e17630d31541831a3115397f7bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1008,6 +1016,22 @@ PrefabInstance:
     - target: {fileID: 7096964024274870578, guid: d6790e17630d31541831a3115397f7bf, type: 3}
       propertyPath: m_Name
       value: Gun pic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245826119656790725, guid: d6790e17630d31541831a3115397f7bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245826119656790725, guid: d6790e17630d31541831a3115397f7bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245826119656790725, guid: d6790e17630d31541831a3115397f7bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.022
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245826119656790725, guid: d6790e17630d31541831a3115397f7bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.137
       objectReference: {fileID: 0}
     - target: {fileID: 8386021594064786983, guid: d6790e17630d31541831a3115397f7bf, type: 3}
       propertyPath: m_Name
