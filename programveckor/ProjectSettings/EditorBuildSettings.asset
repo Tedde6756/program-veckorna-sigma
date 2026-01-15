@@ -5,9 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/tedde combat area.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Gabriel Start area.unity
+    guid: 4bc5524e2d6976948857c92f4795d276
+  - enabled: 1
+    path: Assets/Scenes/Gabriel level 1.unity
+    guid: 9093aae7457d99047a72298943de47a6
+  - enabled: 1
+    path: Assets/Scenes/Gabriel npc area.unity
+    guid: 88a31762d57a3b447a8140098db85362
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
