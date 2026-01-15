@@ -21,9 +21,11 @@ public class Loot : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            print("hallå");
             anim.Play("LootPickup");
             OnItemLooted?.Invoke(itemSO, quantity);
             Destroy(gameObject, .5f);
+            
         }
     }
 }

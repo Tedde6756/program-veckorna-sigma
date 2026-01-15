@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6852b8542f3a5bb4aad56ae087f9256a, type: 3}
+  m_Name: Bazooka
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSO
+  itemName: Bazooka
+  itemDescription: Your final and strongest weapon, well effective towards enemies,
+    and will be a crucial weapon towards yor final battle
+  icon: {fileID: 363967586450311000, guid: a6b2b6274f213ad48bbb8191017b8f2b, type: 3}
+  isGold: 0
+  duration: 0
