@@ -2886,7 +2886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6129358680461029910, guid: d6790e17630d31541831a3115397f7bf, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6930566456904077275, guid: d6790e17630d31541831a3115397f7bf, type: 3}
       propertyPath: m_IsTrigger
@@ -6146,3 +6146,4 @@ SceneRoots:
   - {fileID: 1438941029}
   - {fileID: 1355994233}
   - {fileID: 1109555184}
+  - {fileID: 573420014}

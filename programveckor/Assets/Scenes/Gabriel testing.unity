@@ -1466,17 +1466,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 3020813245393709970, guid: d6790e17630d31541831a3115397f7bf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.218
-      objectReference: {fileID: 0}
-    - target: {fileID: 3020813245393709970, guid: d6790e17630d31541831a3115397f7bf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.312
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698430200778990721, guid: d6790e17630d31541831a3115397f7bf, type: 3}
-=======
     - target: {fileID: 8265272553727712473, guid: b7cfb2e83fd7cf9448fee02cfb27df90, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1510,7 +1499,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8265272553727712473, guid: b7cfb2e83fd7cf9448fee02cfb27df90, type: 3}
->>>>>>> 52e71fc8edeedd8d7bf4e0c31625d4588e702a2c
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1558,7 +1546,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 6930566456904077275, guid: d6790e17630d31541831a3115397f7bf, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1587,8 +1574,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-=======
->>>>>>> 52e71fc8edeedd8d7bf4e0c31625d4588e702a2c
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
