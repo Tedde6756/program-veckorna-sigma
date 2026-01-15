@@ -1,99 +1,46 @@
 using UnityEngine;
 
-public class Player_movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
+    public float speed = 5f;
+
     Rigidbody2D rb;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    Animator animator;
+    SpriteRenderer spriteRenderer;
+    Vector2 movement;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = new Vector2(0, 0);
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        rb.linearVelocity = new Vector2(0, 0);
-        
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            if (transform.position.x < 8.35)
-            {
-                rb.linearVelocity = new Vector2(3, 0);
-            }
-        }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            if (transform.position.x > -8.35)
-            {
-                rb.linearVelocity = new Vector2(-3, 0);
-            }
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            if (transform.position.y > -4.675)
-            {
-                rb.linearVelocity = new Vector2(0, -3);
-            }
-        }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            if (transform.position.y < 4.3)
-            {
-                rb.linearVelocity = new Vector2(0, 3);
-            }
-        }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                if (transform.position.y < 4.675)
-                {
-                    rb.linearVelocity = new Vector2(0, 3);
-                }
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-                rb.linearVelocity = new Vector2(-2.5F, 2.5F);
-            }
+        movement = movement.normalized;
 
-        }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        bool isMoving = movement != Vector2.zero;
+        animator.SetBool("IsRunning", isMoving);
+
+        if (isMoving)
         {
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                if (transform.position.y < 4.675)
-                {
-                    rb.linearVelocity = new Vector2(0, 3);
-                }
-
-                rb.linearVelocity = new Vector2(2.5F, 2.5F);
-            }
-
+            animator.SetFloat("MoveX", movement.x);
+            animator.SetFloat("MoveY", movement.y);
         }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                if (transform.position.y > -4.675)
-                {
-                    rb.linearVelocity = new Vector2(0, -3);
-                }
-                 
-                rb.linearVelocity = new Vector2(2.5F, -2.5F);
-            }
 
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                if (transform.position.y > -4.675)
-                {
-                    rb.linearVelocity = new Vector2(0, -3);
-                }
+        // Flip sprite left/right
+        if (movement.x > 0)
+            spriteRenderer.flipX = false;
+        else if (movement.x < 0)
+            spriteRenderer.flipX = true;
+    }
 
-                rb.linearVelocity = new Vector2(-2.5F, -2.5F);
-            }
-
-        }
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 }
