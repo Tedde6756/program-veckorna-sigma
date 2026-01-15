@@ -4,6 +4,7 @@ public class InventoryManager : MonoBehaviour
 {
     public int gold;
     public TMP_Text goldText;
+    
 
     private void OnEnable()
     {
@@ -24,7 +25,7 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
-            UpdateUI();
+            //UpdateUI();
         }
     }
 
