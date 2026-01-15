@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 10;
     public int health;
-    public Image healthBar;
+  
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+      
     }
     public void TakeDamage(int damage)
     {
