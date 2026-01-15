@@ -2625,7 +2625,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerHealth
   maxHealth: 10
   health: 10
-  healthBar: {fileID: 0}
 --- !u!61 &1988391448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2812,7 +2811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2116193980}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Bullet spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

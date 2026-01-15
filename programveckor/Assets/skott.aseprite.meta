@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: skott
     originalName: 
-    pivot: {x: 0.61538464, y: -2}
+    pivot: {x: 0.5641027, y: 0.45185184}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
