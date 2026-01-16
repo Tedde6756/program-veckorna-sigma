@@ -1,29 +1,40 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 10;
-    public int health;
-  
+    public int maxHP = 10;
+    private int currentHP;
 
-    // Start is called before the first frame update
+    // Reference to GameOver UI script
+    public GameOverUI gameOverUI;
+
     void Start()
     {
-        health = maxHealth;
+        currentHP = maxHP;
     }
 
-    void Update()
+    public void TakeDamage(int amount)
     {
-      
-    }
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-        if(health < 0)
+        currentHP -= amount;
+        Debug.Log("Player took damage! Current HP: " + currentHP);
+
+        if (currentHP <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player died!");
+
+        // Show Game Over UI
+        if (gameOverUI != null)
+        {
+            gameOverUI.ShowGameOver();
+        }
+
+        // Optionally disable player movement
+        gameObject.SetActive(false);
     }
 }
