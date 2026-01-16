@@ -29,8 +29,11 @@ public class Npcscript : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        isPlayerNearby = false;
-        dialogText.SetActive(false);
-        PromptText.SetActive(false);
+        if (collision.gameObject.name == "Player")
+        {
+            isPlayerNearby = false;
+            dialogText.SetActive(false);
+            PromptText.SetActive(false);
+        }
     }
 }
