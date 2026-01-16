@@ -48,7 +48,7 @@ MonoBehaviour:
   bullet: {fileID: 7273188472457317061, guid: 5f09deae08b17e0458f5c7d339d95ef6, type: 3}
   bulletTransform: {fileID: 3101469083729063125}
   canFire: 1
-  timeBetweenFireing: 0.5
+  timeBetweenFireing: 0.25
 --- !u!1 &2182689588199339850
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767ea231d28a45e46a41918ea9b5d3c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_movement
+  speed: 5
+  movementSound: {fileID: 0}
 --- !u!114 &5037066489404643169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,9 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86a7e91e6ffc9d4a874edd1ca64dd0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerHealth
-  maxHealth: 10
-  health: 0
-  healthBar: {fileID: 0}
+  maxHP: 20
+  gameOverUI: {fileID: 0}
 --- !u!114 &3435782903587479705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767ea231d28a45e46a41918ea9b5d3c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_movement
+  speed: 5
+  movementSound: {fileID: 0}
 --- !u!1 &6956057569899520963
 GameObject:
   m_ObjectHideFlags: 0
