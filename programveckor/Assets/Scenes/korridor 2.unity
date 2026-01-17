@@ -1033,15 +1033,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6331430914381802389, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Size.x
-      value: 0.29
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: -6331430914381802389, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Size.y
-      value: 0.5
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: -6331430914381802389, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: 0.0050000027
       objectReference: {fileID: 0}
     - target: {fileID: -6331430914381802389, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_Offset.y
@@ -1053,7 +1053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6331430914381802389, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: -0.021276597
+      value: -0.02173913
       objectReference: {fileID: 0}
     - target: {fileID: -6331430914381802389, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -1061,7 +1061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6331430914381802389, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.47
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: -451447825786823632, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       propertyPath: m_BodyType
@@ -1168,6 +1168,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3253363038663164844, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 411176559}
+    - targetCorrespondingSourceObject: {fileID: 3253363038663164844, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 411176560}
   m_SourcePrefab: {fileID: 100100000, guid: 1eb780b01a32dab4591410b828bffdc7, type: 3}
 --- !u!1 &411176558 stripped
 GameObject:
@@ -1271,6 +1274,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &411176560
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411176558}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 868639a10aca67345aa457053f346b7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &417908127
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,6 +5162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerHealth
   maxHP: 10
+  healthBar: {fileID: 0}
   gameOverUI: {fileID: 1198800163}
 --- !u!61 &1400360093
 BoxCollider2D:
