@@ -5,6 +5,8 @@ public class PlayerHealth : MonoBehaviour
     public int maxHP = 10;
     private int currentHP;
 
+    public HealthBar healthBar;
+
     // Reference to GameOver UI script
     public GameOverUI gameOverUI;
 
@@ -16,7 +18,6 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHP -= amount;
-        Debug.Log("Player took damage! Current HP: " + currentHP);
 
         if (currentHP <= 0)
         {
@@ -26,7 +27,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player died!");
 
         // Show Game Over UI
         if (gameOverUI != null)

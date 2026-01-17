@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -12,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     Vector2 movement;
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -59,6 +60,14 @@ public class PlayerMovement : MonoBehaviour
                 movementSound.Play();
             else if (!isMoving && movementSound.isPlaying)
                 movementSound.Pause();
+        }
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 
