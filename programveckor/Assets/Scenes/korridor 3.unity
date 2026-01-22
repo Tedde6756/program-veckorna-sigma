@@ -6373,6 +6373,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 34071e1cb2fe9694582b534839be6b92, type: 3}
+--- !u!4 &1871595519 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 34071e1cb2fe9694582b534839be6b92, type: 3}
+  m_PrefabInstance: {fileID: 1871595518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1939269797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6421,6 +6426,7 @@ Transform:
   - {fileID: 959177111}
   - {fileID: 429390871}
   - {fileID: 39383546}
+  - {fileID: 1871595519}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2062198927
@@ -6516,4 +6522,3 @@ SceneRoots:
   - {fileID: 1150480756}
   - {fileID: 90762422}
   - {fileID: 287011642}
-  - {fileID: 1871595518}
